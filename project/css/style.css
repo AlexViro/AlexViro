@@ -60,7 +60,6 @@ body {
   padding-top: 24px;
   padding-bottom: 18px;
   display: flex;
-  gap: 32px;
   align-items: center;
   justify-content: space-between;
 }
@@ -81,19 +80,6 @@ body {
 .menu__list-link {
   color: #fff;
   text-transform: uppercase;
-  font-weight: 500;
-}
-
-.header-nav {
-  display: flex;
-  gap: 18px;
-  padding-top: 25px;
-}
-
-.cart {
-counter-reset: myCounter;
-display: flex;
-align-items: center;
 }
 
 .main {
@@ -328,46 +314,29 @@ top: 0;
 
 .footer__inner {
   display: flex;
-  gap: 70px;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-block {
   color: #fff;
   text-align: center;
-  font-size: 25px;
 }
 
 .copyright {
   padding-top: 50px;
-  width: 180px;
   opacity: 0.3;
-}
-
-.footer__menu {
-  gap: 33px;
-  display: flex;
-  justify-content: space-around;
 }
 
 .footer__menu-list {
-  max-width: 130px;
+  gap: 20px;
+  display: flex;
 }
 
 .footer__menu-title {
-  font-size: 16px;
   font-weight: 700;
   padding-bottom: 4px;
 }
-
-.footer__menu-link {
-  font-size: 12px;
-  opacity: 0.3;
-}
-
-.footer__menu-item + .footer__menu-item {
-  padding-top: 16px;
-}  
 
 .contacts {
   padding: 100px 0 150px;
