@@ -26,7 +26,13 @@
                   <a href="catalog.html" class="menu__list-link">КАТАЛОГ</a>
                 </li>
                 <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">КОНТАКТЫ</a>
+                  <a href="contacts.html" class="menu__list-link">КОНТАКТЫ</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="about us.html" class="menu__list-link">О НАС</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="Our advantages.html" class="menu__list-link">НАШИ ПРЕИМУЩЕСТВА</a>
                 </li>
               </ul>
             </nav>
@@ -35,19 +41,26 @@
       </header>
       <main class="main">
         <section class="contacts">
+          <div class="back" style="background-image: url(images/фон.jpg);">
           <div class="conteiner">
-            <h2 class="contacts-title">Contact Us</h2>
+            <h2 class="contacts-title">Написать нам</h2>
             <p class="contacts-text">
-              Feel free to contact us with questions, potencial
-               partnerships or media inquiries
+              В случае возникновения вопросов или по поводу сотрудничества 
             </p>
-            <form action="#" class="form">
-              <input type="text" class="form__input" placeholder="Name">
-              <input type="email" class="form__input" placeholder="E-mail">
-              <textarea class="form__textarea" placeholder="Your text"></textarea>
-              <button class="form__button" type="submit">SUBMIT</button>
+            <div class="form__body">
+            <form action="#" id="form" class="form">
+              <input type="text" id="formName" name="name" class="form__input _req" placeholder="Имя">
+              <input type="text" id="formEmail" name="email" class="form__input _req _email" placeholder="E-mail">
+              <textarea class="form__textarea" id="formMessage" name="message" placeholder="Ваше письмо"></textarea>
+              <div class="checkbox">
+                  <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                  <label for="formAgreement" class="checkbox__text"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
+              </div>
+              <button class="form__button" type="submit">ОТПРАВИТЬ</button>
             </form>
           </div>
+          </div>
+        </div>
         </section>
       </main>
       <footer class="footer">
@@ -59,12 +72,22 @@
                 <p class="logo__text">Tires and Spare Parts</p>
               </a>
             <div class="copyright">
-              <p>© 2019 PRO Auto. <br>Все права защищены.</p>
+              <p>© 2024 Tires and spare parts. <br>Все права защищены.</p>
             </div>
             </div>
             <ul class="footer__menu-list">
-              <li class="footer__menu-item"><p class="footer__menu-title">КАТАЛОГ</p></li>
-              <li class="footer__menu-item"><p class="footer__menu-title">КОНТАКТЫ</p></li>
+              <li class="menu__list-item">
+                <a href="catalog.html" class="menu__list-link">КАТАЛОГ</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="contacts.html" class="menu__list-link">КОНТАКТЫ</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="about us.html" class="menu__list-link">О НАС</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="Our advantages.html" class="menu__list-link">НАШИ ПРЕИМУЩЕСТВА</a>
+              </li>
             </ul>
         </div>
       </footer>
