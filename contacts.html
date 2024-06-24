@@ -6,8 +6,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;700&display=swap"
-      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;700&display=swap"  rel="stylesheet"/>
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -21,6 +20,11 @@
               <p class="logo__text">Tires and Spare Parts</p>
             </a>
             <nav class="menu">
+              <button class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
               <ul class="menu__list">
                 <li class="menu__list-item">
                   <a href="catalog.html" class="menu__list-link">КАТАЛОГ</a>
@@ -48,15 +52,24 @@
               В случае возникновения вопросов или по поводу сотрудничества 
             </p>
             <div class="form__body">
-            <form action="#" id="form" class="form">
-              <input type="text" id="formName" name="name" class="form__input _req" placeholder="Имя">
-              <input type="text" id="formEmail" name="email" class="form__input _req _email" placeholder="E-mail">
-              <textarea class="form__textarea" id="formMessage" name="message" placeholder="Ваше письмо"></textarea>
+            <form action="https://api.web3forms.com/submit" method="POST" class="form">
+
+              <input type="hidden" name="access_key" 
+              value="20b7293a-fd0f-427e-8176-47d400db29d9">
+
+              <input type="text" id="" name="name" 
+              class="form__input" placeholder="Имя" required autocomplete="off">
+
+              <input type="email" id="" name="email" 
+              class="form__input" placeholder="E-mail" required autocomplete="off">
+
+              <textarea class="form__textarea" id="" name="message" placeholder="Ваше письмо"></textarea>
+
               <div class="checkbox">
-                  <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
-                  <label for="formAgreement" class="checkbox__text"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
+                  <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input" required>
+                  <label for="formAgreement" class="checkbox__text"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="personal.html">Условиями</a>*</span></label>
               </div>
-              <button class="form__button" type="submit">ОТПРАВИТЬ</button>
+              <input type="submit" value="ОТПРАВИТЬ" class="form__button" name="send">
             </form>
           </div>
           </div>
@@ -76,6 +89,9 @@
             </div>
             </div>
             <ul class="footer__menu-list">
+              <li class="menu__list-item">
+                <a href="personal.html" class="menu__list-link">ПОЛИТИКА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</a>
+              </li>
               <li class="menu__list-item">
                 <a href="catalog.html" class="menu__list-link">КАТАЛОГ</a>
               </li>
